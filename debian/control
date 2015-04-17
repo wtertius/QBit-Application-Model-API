@@ -1,12 +1,14 @@
-Source: libqbit-application-model-api-perl
+Source: libtertiusqbit-application-model-api-perl
 Section: perl
 Priority: extra
-Maintainer: Sergei Svistunov <sergei-svistunov@yandex.ru>
-Build-Depends: debhelper (>= 8.0.0), perl, libqbit-perl, libqbit-application-perl
+Maintainer: Dmitry Lukiyanchuk <wtertius@gmail.com>
+Build-Depends: debhelper (>= 8.0.0), perl, libtertiusqbit-perl, libtertiusqbit-application-perl
 Standards-Version: 3.9.4
 
-Package: libqbit-application-model-api-perl
+Package: libtertiusqbit-application-model-api-perl
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, ${perl:Depends}, perl, libqbit-perl, libqbit-application-perl
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${perl:Depends}, perl, libtertiusqbit-perl, libtertiusqbit-application-perl
+Conflicts: libqbit-application-model-api-perl
+Replaces: libqbit-application-model-api-perl
 Description: Base class for construct API connectors.
  Base class for construct API connectors.
